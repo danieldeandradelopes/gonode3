@@ -7,6 +7,8 @@ const authMiddleware = require('./app/middlewares/auth')
 const controllers = require('./app/controllers')
 const validators = require('./app/validators')
 
+routes.get('/', (req, res) => res.send('Hello World!'));
+
 routes.post(
   '/users',
   validade(validators.User),
