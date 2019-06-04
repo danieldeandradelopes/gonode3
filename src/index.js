@@ -1,3 +1,3 @@
 const server = require('./server')
 
-server.listen(3031 || process.env.PORT)
+server.listen(process.env.PORT || 3031)
